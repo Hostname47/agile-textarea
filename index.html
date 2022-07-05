@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" value="MOUAD NASSRI">
+    <title>Agile textarea</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Agile Textarea</h1>
+
+    <div class="form-wrapper">
+        <form action="/report" method="POST" novalidate>
+            <div class="">
+                <label for="message" class="block">Message</label>
+                <p class="sub-label" aria-describedby="Give more details about the problem in your message">A problem not listed above that requires action by a moderator. <em>Be specific and detailed!</em></p>
+                <textarea name="message" id="message" minlength="10" maxlength="400" class="min-count-textarea" placeholder="Enter your message here"></textarea>
+                <span class="text-counter" aria-describedby="Counter state">Enter at least 10 characters</span>
+            </div>
+            <button type="submit" class="button-style-1 mt12" disabled>
+                <svg class="spinner size12 none absolute" style="margin-top: 2px;" fill="none" viewBox="0 0 16 16">
+                    <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
+                    <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+                </svg>
+                <span>Submit message</span>
+            </button>
+        </form>
+    </div>
+</body>
+</html>
