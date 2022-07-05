@@ -8,7 +8,7 @@
     <title>Agile textarea</title>
 
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <h1>Agile Textarea</h1>
@@ -18,11 +18,11 @@
             <div class="">
                 <label for="message" class="block">Message</label>
                 <p class="sub-label" aria-describedby="Give more details about the problem in your message">A problem not listed above that requires action by a moderator. <em>Be specific and detailed!</em></p>
-                <textarea name="message" id="message" minlength="10" maxlength="400" class="min-count-textarea" placeholder="Enter your message here"></textarea>
+                <textarea name="message" id="message" data-min="10" data-max="400" class="counted-textarea" placeholder="Enter your message here" autocomplete="off"></textarea>
                 <span class="text-counter" aria-describedby="Counter state">Enter at least 10 characters</span>
             </div>
-            <button type="submit" class="button-style-1 mt12" disabled>
-                <svg class="spinner size12 none absolute" style="margin-top: 2px;" fill="none" viewBox="0 0 16 16">
+            <button id="submit-report" type="submit" class="button-style-1 mt12" disabled>
+                <svg class="spinner size12 mr6 none" style="margin-top: 2px;" fill="none" viewBox="0 0 16 16">
                     <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke"></circle>
                     <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
                 </svg>
